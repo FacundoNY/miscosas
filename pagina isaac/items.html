@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ítems - The Binding of Isaac: Repentance</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ítems</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introducción</a></li>
+                <li><a href="characters.html">Personajes</a></li>
+                <li><a href="items.html">Ítems</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="items">
+            <h2>Ítems</h2>
+            <p>Con más de 500 ítems, el juego ofrece una gran variedad de opciones para mejorar a tu personaje y cambiar tu estrategia.</p>
+            <div class="item-grid">
+                <div class="item">
+                    <button class="item-btn" onclick="toggleItemDetails('Brimstone')">
+                        <img src="images/brimstone.png" alt="Brimstone Icon" class="icon">
+                    </button>
+                </div>
+                <div class="item">
+                    <button class="item-btn" onclick="toggleItemDetails('Mom\'s Knife')">
+                        <img src="images/moms_knife.png" alt="Mom's Knife Icon" class="icon">
+                    </button>
+                </div>
+                <div class="item">
+                    <button class="item-btn" onclick="toggleItemDetails('The Halo')">
+                        <img src="images/the_halo.png" alt="The Halo Icon" class="icon">
+                    </button>
+                </div>
+                <div class="item">
+                    <button class="item-btn" onclick="toggleItemDetails('Polyphemus')">
+                        <img src="images/polyphemus.png" alt="Polyphemus Icon" class="icon">
+                    </button>
+                </div>
+                <div class="item">
+                    <button class="item-btn" onclick="toggleItemDetails('Sacred Heart')">
+                        <img src="images/sacred_heart.png" alt="Sacred Heart Icon" class="icon">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Binding of Isaac: Repentance Fan Page</p>
+    </footer>
+
+    <div class="item-details" id="itemDetails">
+        <div class="item-details-content">
+            <span class="close-btn" onclick="closeItemDetails()">&times;</span>
+            <div class="item-details-container">
+                <div class="item-icon" id="itemIcon"></div>
+                <div class="item-details-text">
+                    <h2 class="item-name" id="itemName"></h2>
+                    <p class="item-pickup-text" id="itemPickupText"></p>
+                    <p class="item-description" id="itemDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
